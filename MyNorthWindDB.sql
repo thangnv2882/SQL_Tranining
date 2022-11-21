@@ -103,7 +103,7 @@ WHERE
 --Exercise 9
 --Write a SELECT query to display total orders of every employee in 1996 as following:
 SELECT
-  o.EmployeeID,
+  e.EmployeeID,
   e.LastName,
   e.FirstName,
   e.Title,
@@ -113,7 +113,7 @@ FROM
   Orders o
   INNER JOIN Employees e ON e.EmployeeID = o.EmployeeID
 GROUP BY
-  o.EmployeeID,
+  e.EmployeeID,
   e.LastName,
   e.FirstName,
   e.Title,
